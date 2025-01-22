@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosaico de Imagens com Menu</title>
+    <style>
+        /* Estilo do menu */
+        .navbar {
+            background-color: #881e85;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Mosaico de Imagens */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Estilos do título e descrição */
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2.5rem;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #444;
+            text-align: justify;
+            padding: 0 20px;
+        }
+
+        /* Mosaico de Imagens */
+        .mosaico {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 imagens do mesmo tamanho */
+            gap: 10px;
+            width: 80%;
+            max-width: 1000px;
+            background-color: #fff;
+            padding: 20px;
+            border: 5px solid #333;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+        }
+
+        .mosaico div {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .mosaico img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Ajustes para telas menores */
+        @media screen and (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar a {
+                width: 100%;
+                text-align: center;
+                padding: 14px;
+                box-sizing: border-box;
+            }
+
+            .mosaico {
+                grid-template-columns: repeat(1, 1fr);
+                /* 1 imagem por linha em telas menores */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menu de Navegação -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="todolist.html">Roteiro</a>
+        <a href="segredo.html">Segredo</a>
+    </div>
+
+    <!-- Título e Descrição -->
+    <h1>Hoje é seu dia meu amor 🥳🥳🥳🥳🥳🥳</h1>
+    <p>Minha princesa você deve estar pensando, mais o que meu namorado aprontou??? 🧐🧐🧐🧐🧐, e sim eu fiz isso.... Eu
+        criei um site meu amor com alguns dos nosso momentos mais irados que vivemos juntos meu amor!!!!!!! <br><br>
+        Eu ja te falei quando a gente se beijou naquele ponto de onibus, eu falei pra mim mesmo que não iria ser so um
+        beijo, embora vc falasse que não queria nada naquela epoca kkkkkkkkkkk, porem eu fizemos acontecer meu amor, a
+        gente foi la e deu certo, e evoluimos muito meu amor, a gente aprendeu muito e aprende muito um com o outro,
+        sempre completamente apaixonados um pelo outro e fazer esse presente pra vc meu amor, é incrivel e isso é so o
+        começo meu amor, do seus dias comigo na sexta e sabado e domingo, vc pode ver mais nos links a cima meu
+        amor!!!!, tem nosso roteiro e um segredo ali pra vc heehehehe. <br><br>
+
+        FELIZ SEU DIA MEU AMOR, TE AMO PRA VIDA TODAAAAAAAAAAAAAAAAAAAAAAAAAAA 🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳
+    </p>
+
+    <!-- Mosaico de Imagens -->
+    <div class="mosaico">
+        <div><img src="/img/1.jpg" alt="Imagem 1"></div>
+        <div><img src="/img/2.jpg" alt="Imagem 2"></div>
+        <div><img src="/img/3.jpg" alt="Imagem 3"></div>
+    </div>
+</body>
+
+</html>

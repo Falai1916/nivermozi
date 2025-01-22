@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Estilo do menu */
+        .navbar {
+            background-color: #881e85;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .heart {
+            display: block;
+            margin: 0 auto 10px;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            clip-path: polygon(50% 0%, 100% 35%, 85% 100%, 50% 75%, 15% 100%, 0% 35%);
+        }
+
+        .day {
+            margin-bottom: 30px;
+        }
+
+        .day h2 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+            position: relative;
+            text-align: center;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            background: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            /* Corta a imagem em forma de coração */
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menu de navegação -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="todolist.html">Roteiro</a>
+        <a href="segredo.html">Segredo</a>
+    </div>
+
+    <div class="container">
+        <h1>To-Do List</h1>
+
+        <div class="day">
+            <div style="width: 120px; height: 110px; display: flex; align-items: center;            margin: 0 auto 10px;
+ ">
+                <img style="width: 100%; height: 100%;" src="./img/image (15).png" alt="Heart Icon">
+            </div>
+
+            <h2>Sexta</h2>
+            <div class="card">
+                <img src="https://blog.covabra.com.br/wp-content/uploads/2024/06/Jantar-romantico-com-receitas-praticas-para-conquistar-o-seu-amor.png"
+                    alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Jantar</div>
+                    <div class="card-description">Senhora Bianca Jesus vai ter uma janta incrivel com seu homem, com um
+                        prato chamado, arroz a linguice heheh: contendo arroz, feijão, linguiça e saladinha gostosa
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/11/87/1b/11871b9fae0406f0668fdaed00a94fed.jpg" alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Banho</div>
+                    <div class="card-description">Logo depois da janta vamos ter um banho muito incrivel juntos, gostoso
+                        e com um som ambiente com a alexa</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fly.metroimg.com/upload/q_85,w_700/https://uploads.metroimg.com/wp-content/uploads/2018/05/10155627/massagem.jpg"
+                    alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Massagem + Oléo</div>
+                    <div class="card-description">Logo após do banho senhor Vicenzzo Toth vulgo amor da sua vida, vai
+                        lhe porporcionar uma das melhores massagens que ele ja fez em você e da sua vida toda!!!
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://tm.ibxk.com.br/2024/07/02/02212621190008.jpg?ims=704x264" alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Dexter até Mimir</div>
+                    <div class="card-description">Logo depois do que acontecer la em cima, vamos assistir dexter ate
+                        mimir gostoso
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="day">
+            <div style="width: 120px; height: 110px; display: flex; align-items: center;            margin: 0 auto 10px;
+ ">
+                <img style="width: 100%; height: 100%;" src="./img/image (16).png" alt="Heart Icon">
+            </div>
+
+            <h2>Sábado</h2>
+            <div class="card">
+                <img src="https://s2-receitas.glbimg.com/65Om7pNYdSAw_aFFAGw7b0J9OGE=/0x0:1080x608/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2021/L/7/aaduLAQRKJ1oBWNjhlIA/capa-materia-gshow-3-.png"
+                    alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Café da Manhã</div>
+                    <div class="card-description">Não sei o horario certo que iremos acordar porem iremos tomar um café
+                        bem gostoso, com um pão frances gostoso, e frios e um nescau com leite que vc ama tanto!!!
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/11/87/1b/11871b9fae0406f0668fdaed00a94fed.jpg" alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Banho</div>
+                    <div class="card-description">Logo depois do café da manhã posso deixar você escolher se vamos tomar
+                        um banho juntos novamente ou cada um com seu banho</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://tm.ibxk.com.br/2024/07/02/02212621190008.jpg?ims=704x264" alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Dexter</div>
+                    <div class="card-description">Acabamos o banho e tudo mais, vamos assistir um Dexter topzera mesmo,
+                        pegar bem pra assistir
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://panelaterapia.com/wp-content/uploads/2023/09/receita-para-almoco-de-domingo-1152x768.jpg"
+                    alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Almoçar</div>
+                    <div class="card-description">Vou parar uns minutos antes para fazer nossa comidinha, iremos ter um
+                        frangole, frango com arroz soltinho, uma saladinha e um feijão bom de mais só
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.guiadeinvestimento.com.br/wp-content/uploads/2021/06/Aprenda-a-preparar-uma-apresenta%C3%A7%C3%A3o-estrat%C3%A9gica-em-4-etapas-825x510.jpg"
+                    alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Apresenção</div>
+                    <div class="card-description">Isso aqui pode ser chato, mais vai garantir nosso futuro, preparar a
+                        apresentação do FalAI, vamos sentar e eu vou te mostrar o software, falar pra você fuçar e tudo
+                        mais, e montaremos a apresentação
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://b3577058.smushcdn.com/3577058/wp-content/uploads/2023/07/aricanduva-1-1-720x511.jpeg?lossy=1&strip=0&webp=1"
+                    alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Shopping Aliança</div>
+                    <div class="card-description">Depois da apresentação vamos ir no shopping polir nossas alianças,
+                        assim podemos tomar uma casquinha de sorvete
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.novoaprado.com.br/wp-content/uploads/2022/12/depositphotos_4137041-stock-illustration-secret-grunge-text.webp"
+                    alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Segredo</div>
+                    <div class="card-description">Depois vamos em um lugar secreto, um lugar que vc vai amar muito, eu
+                        acho que vamos nos divertir muito, ir nesse lugar
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://blog.covabra.com.br/wp-content/uploads/2024/06/Jantar-romantico-com-receitas-praticas-para-conquistar-o-seu-amor.png"
+                    alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Jantar</div>
+                    <div class="card-description">Senhora Bianca Jesus vai ter uma janta incrivel com seu homem, o prato
+                        aqui vamos improvisar skskk
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/71DGU0K2bbL.__AC_SX300_SY300_QL70_ML2_.jpg"
+                    alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Dormir</div>
+                    <div class="card-description">Vamos dormir novamente muito gostoso, só nos dois juntos, inteiramente
+                        juntos
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="day">
+            <div style="width: 120px; height: 110px; display: flex; align-items: center;            margin: 0 auto 10px;
+ ">
+                <img style="width: 100%; height: 100%;" src="./img/image (17).png" alt="Heart Icon">
+            </div>
+
+            <h2>Domingo</h2>
+            <div class="card">
+                <img src="https://s2-receitas.glbimg.com/65Om7pNYdSAw_aFFAGw7b0J9OGE=/0x0:1080x608/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2021/L/7/aaduLAQRKJ1oBWNjhlIA/capa-materia-gshow-3-.png"
+                    alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Café da Manhã</div>
+                    <div class="card-description">Não sei o horario certo que iremos acordar porem iremos tomar um café
+                        bem gostoso, com um pão frances gostoso, e frios e um nescau com leite que vc ama tanto!!!
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/11/87/1b/11871b9fae0406f0668fdaed00a94fed.jpg" alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Banho</div>
+                    <div class="card-description">Logo depois do café da manhã posso deixar você escolher se vamos tomar
+                        um banho juntos novamente ou cada um com seu banho</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.awsli.com.br/2500x2500/1011/1011926/produto/39105544/casquinha-de-sorvete-biscoito-doce-conny-d56edf5d.jpg"
+                    alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Tomar um sorvete</div>
+                    <div class="card-description">Vamos tomar um otimo sorvete mesmo um otimo sorvete bem gostoso mesmo
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://tm.ibxk.com.br/2024/07/02/02212621190008.jpg?ims=704x264" alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Dexter</div>
+                    <div class="card-description">Acabamos o banho e tudo mais, vamos assistir um Dexter topzera mesmo,
+                        pegar bem pra assistir
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://panelaterapia.com/wp-content/uploads/2023/09/receita-para-almoco-de-domingo-1152x768.jpg"
+                    alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Almoçar</div>
+                    <div class="card-description">Vou parar uns minutos antes para fazer nossa comidinha, iremos ter um
+                        hotdog, um delicioso hotdog, ou melhor cachorro la caliente
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://tm.ibxk.com.br/2024/07/02/02212621190008.jpg?ims=704x264" alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Dexter + Dar uns beijão</div>
+                    <div class="card-description">Vamos assistir um dexter e ficar de boas dando uns belos e incriveis
+                        beijos incriveis
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="data:image/webp;base64,UklGRnQCAABXRUJQVlA4IGgCAADwFQCdASoNAZsAPoE+m0slIyIhoLVYwKAQCWlu4XPxG+s5m5P7p+PEe74YDjBph/mhaGJLe3jFqjFqjFqjFqjFqjFqjFqjFqjFqjFqdxgYec/NGD8e1NaYajFqjFfGmrE05KNdqpAMStdnDTGTwyq1TKJnj2tYFUuqMV8BtxFloLD2S9fUn1MFG7rPOoadfk0nLyQHZsJ1ZSjZAdmwdmwdmwdmwdmwdmwdmwdszsvykmHw567pbloAAP7/g2AABy3nI9ei7fK4LPawasWB4Vb3eiA2/MXXAk6YfqdHj14xSzW7D2rbUT3Qu7WK9B71g9o3kpEl2jyR0N8Cqz7j1Nf/Q2/OODICs0TA2r0ttebij1Q9uKB6FhwNTyeiKcRKm+xYQ/1eyElQwoMOqE0tlNL9ur7YKEEwRRxYKeSD8CH+gVzWH5tMvm5xL99nwmebRd/4iPtaeDpurgVDuetkaZeTb6dXz+a2K8uSL3eCNZ8hsnnw7L+ld2RT9IPW90rHedvg/zAvtTGqYQ3i2anAE9GM7/wVJUtzPBwb7a5kdgJUnSIwmzGYZ1Duhj2MooedPvKfS9ZbJcMab19aGqnl4FDkAuEm/ReSMwhQxYJgnP5leqWCN1m//JN8Vqi63TZ/erzs0MYiTqxdPNPkQLcPddcsSGH0wa6zM3ZLD4XPEiF99R1+2U/obPnF+vNij2Udk8f7yJQLWe1EL6ZQGD8jvsvezfQC+gifN6mng5+uvIrHq/O/nkDw3H0x2524os5MvR4i/Xmcp2Y++OZrY0in6Im0Lq2N+y4MN7G2cyDNAgAEAABHdAoEAAAA"
+                    alt="Task Image">
+                <div class="card-content">
+                    <div class="card-title">Acabou....</div>
+                    <div class="card-description">Bom o fim é triste mesmo, mas vamos pedir um uber para sua casa, pois
+                        meu amor trabalhadreira, precisa acordar cedo na segunda
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
